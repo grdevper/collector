@@ -1,0 +1,2 @@
+
+const collector = TogCollector.getInstance();

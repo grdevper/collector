@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>信息采集测试</title>
+</head>
+
+<body style="height: 5000px">
+  <div class="part">
+    <h6>使用说明</h6>
+    <ol>
+      <li>1</li>
+      <li>2</li>
+    </ol>
+  </div>
+  <div class="part">
+    <h6>路由上报</h6>
+    <p>
+      点击以下链接,会在跳转的时候上报数据
+    </p>
+    <a href="./index.html" class="btn btn-info">首页( index.html )</a>
+    <a href="./test1.html" class="btn btn-info">测试页面1( test1.html )</a>
+  </div>
+  <div class="part">
+    <h6>点击事件上报</h6>
+    <p>
+      采集设置了class='xxx'的元素的点击事件
+    </p>
+    <button class="collect-click btn btn-primary">测试按钮1( button )</button>
+    <span class="collect-click btn btn-primary">测试按钮2( span )</span>
+    <a class="collect-click btn btn-primary">测试按钮3( a )</a>
+    <label class="collect-click btn btn-primary">测试按钮4( label )</label>
+    <img src="http://www.baidu.com" style="display: none"/>
+  </div>
+  <div class="part">
+    <h6>手动上报数据</h6>
+    <p>
+      手动上报特定的数据
+    </p>
+    <button class="">测试</button>
+    <input style="width: 100px; border:1px solid red" />
+  </div>
+  <button id="lc">localstorage</button>
+  <script src="./tog-collector.js"></script>
+  <script src="./test.js"></script>
+  <script>
+      document.getElementById('lc').onclick = function () {
+          //history.back();
+          //history.replaceState('', '' ,'test1.html')
+          //history.go(-1);
+          //window.history.pushState('forward', null, 'test1.html');
+      }
+  </script>
+</body>
+
+</html>
