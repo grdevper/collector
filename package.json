@@ -12,7 +12,7 @@
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.7.6",
-    "qs": "^6.9.1",
+    "qs": "^6.9.7",
     "rollup": "^1.27.9",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
